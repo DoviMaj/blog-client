@@ -1,0 +1,23 @@
+.hero {
+  padding: 60px 80px;
+  margin-top: 77px;
+  background-color: rgba(144, 161, 82, 0.534);
+  border-bottom: 1px solid rgb(1, 1, 1);
+
+  .left {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+  p {
+    margin-top: 30px;
+    font-weight: light;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+}
