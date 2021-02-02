@@ -1,2 +1,21 @@
+.postList {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px 80px;
+  flex-wrap: wrap;
+}
+
 .post {
+  padding: 35px;
+  box-shadow: 1px 1px 1px black;
+
+  h1,
+  p {
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }
