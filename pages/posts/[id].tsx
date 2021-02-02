@@ -1,17 +1,13 @@
-import Link from "next/link";
 import { GetStaticProps, GetStaticPaths } from "next";
 import SinglePost from "../../components/SinglePost";
 
-interface Post {
-  region: string;
-  country: string;
-  locale: string;
-  company: string;
+interface Props {
+  post: Object;
 }
 
-function Post({ post }) {
+const Post: React.FC<Props> = ({ post }) => {
   return <SinglePost post={post} />;
-}
+};
 
 // This function gets called at build time
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -21,7 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const posts = resJson.posts;
 
   // Get the paths we want to pre-render based on posts
-  const paths = posts.map((post) => `/posts/${post._id}`);
+  const paths = posts.map((post: any) => `/posts/${post._id}`);
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false };
