@@ -1,14 +1,15 @@
 .postList {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
   padding: 50px 80px;
   flex-wrap: wrap;
 }
 
 .post {
-  padding: 35px;
+  padding: 45px;
   box-shadow: 1px 1px 1px black;
+  cursor: pointer;
 
   h1,
   p {
@@ -18,4 +19,8 @@
   h1 {
     text-align: center;
   }
+}
+
+.post:hover {
+  box-shadow: 1px 1px 4px 1px black;
 }
