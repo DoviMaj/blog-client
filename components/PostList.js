@@ -4,11 +4,11 @@ import IndexPost from "../components/IndexPost";
 
 const PostList = ({ posts }) => {
   return (
-    <div className={styles.postList}>
+    <ul className={styles.postList}>
       {posts.map((post) => (
         <IndexPost key={post._id} post={post} />
       ))}
-    </div>
+    </ul>
   );
 };
 

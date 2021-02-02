@@ -1,17 +1,19 @@
+import React from "react";
 import Hero from "../components/Hero";
 import PostList from "../components/PostList";
+import { GetStaticProps } from "next";
 
-function Blog({ posts }) {
+const Blog = ({ posts }) => {
   return (
     <>
       <Hero />
       <PostList posts={posts} />
     </>
   );
-}
+};
 
 // This function gets called at build time
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   // Call an external API endpoint to get posts
   const res = await fetch("https://dovimaj-blog-api.herokuapp.com/api/posts");
   const resJson = await res.json();
@@ -27,6 +29,6 @@ export async function getStaticProps() {
     // - At most once every second
     revalidate: 1, // In seconds
   };
-}
+};
 
 export default Blog;
