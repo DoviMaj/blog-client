@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GetStaticProps, GetStaticPaths } from "next";
+import SinglePost from "../../components/SinglePost";
 
 interface Post {
   region: string;
@@ -9,13 +10,7 @@ interface Post {
 }
 
 function Post({ post }) {
-  return (
-    <div>
-      <Link href="/">Back</Link>
-      <h1>{post.title}</h1>
-      <p>{post.text}</p>
-    </div>
-  );
+  return <SinglePost post={post} />;
 }
 
 // This function gets called at build time

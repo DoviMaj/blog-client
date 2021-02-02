@@ -1,14 +1,12 @@
 import Hero from "../components/Hero";
-import Post from "../components/Post";
+import PostList from "../components/PostList";
 
 function Blog({ posts }) {
   return (
-    <ul>
+    <>
       <Hero />
-      {posts.map((post) => (
-        <Post key={post._id} post={post} />
-      ))}
-    </ul>
+      <PostList posts={posts} />
+    </>
   );
 }
 
