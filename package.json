@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start"
   },
@@ -12,7 +12,8 @@
     "next": "10.0.6",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.15.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.22",
