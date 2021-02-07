@@ -1,6 +1,6 @@
 # Blog Client for [Blog Project](https://www.theodinproject.com/lessons/blog-api)
 
-This repo is live [here](https://blog-client-gamma.vercel.app/)
+This repo is live [here](https://blog-client.dovimaj.vercel.app/)
 
 Visit the CMS repo for this project [here](http://dovimaj.github.io/blog-cms).
 
