@@ -5,7 +5,6 @@ import Nav from "./Nav";
 const Layout = ({ children }) => {
   return (
     <>
-      <Head></Head>
       <Nav />
       <main>{children}</main>
     </>
