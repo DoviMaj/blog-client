@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import SinglePost from "../../components/SinglePost.tsx";
+import SinglePost from "../../components/SinglePost";
 
 interface Props {
   post: Object;
