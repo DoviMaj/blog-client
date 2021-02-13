@@ -2,11 +2,11 @@
 
 This repo is live [here](https://blog-client.dovimaj.vercel.app/)
 
-![next.gif](next.gif)
-
 Visit the CMS repo for this project [here](https://github.com/DoviMaj/blog-cms).
 
 Visit the REST API repo for this project [here](https://github.com/DoviMaj/blog-api).
+
+![next.gif](next.gif)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
