@@ -1,4 +1,4 @@
-# Blog Client for [Blog Project](https://www.theodinproject.com/lessons/blog-api)
+# Blog Client for [Blog Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs/lessons/blog-api)
 
 This repo is live [here](https://blog-client.dovimaj.vercel.app/)
 
