@@ -1,8 +1,13 @@
 .hero {
+  word-wrap: break-word;
   padding: 60px 80px;
   margin-top: 77px;
   background: linear-gradient(45deg, #a1a5a238, transparent);
   border-bottom: 1px solid #4646462e;
+
+  @media (max-width: 400px) {
+    padding: 60px 40px;
+  }
 
   .left {
     max-width: 500px;
@@ -12,6 +17,10 @@
     font-size: 4em;
     font-weight: bold;
     line-height: 1em;
+
+    @media (max-width: 400px) {
+      font-size: 3em;
+    }
   }
 
   p {
@@ -19,5 +28,9 @@
     font-weight: light;
     line-height: 1.5em;
     font-size: 1em;
+
+    @media (max-width: 400px) {
+      font-size: 0.8em;
+    }
   }
 }
