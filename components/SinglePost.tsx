@@ -20,7 +20,6 @@ const SinglePost: React.FC<Props> = ({ post, comments }) => {
 
   const submitForm = async (data, e) => {
     setCurrentComments([...currentComments, data]);
-    console.log("hi");
     const formData = JSON.stringify(data);
     try {
       const req = await fetch(

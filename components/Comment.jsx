@@ -14,7 +14,17 @@ const Comment = ({ comment }) => {
     <div className="comment">
       <strong>{comment.user}</strong>
       <p>{comment.text}</p>
-      <p>{date_formated}</p>
+      <p>
+        {date_formated === "Invalid Date"
+          ? new Date().toLocaleDateString("en-gb", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+              hour: "numeric",
+              minute: "2-digit",
+            })
+          : date_formated}
+      </p>
     </div>
   );
 };
