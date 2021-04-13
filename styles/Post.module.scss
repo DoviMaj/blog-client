@@ -1,18 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .postList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 20px;
   padding: 50px 80px;
 
   @media (max-width: 400px) {
     padding: 50px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
 .post {
   padding: 35px;
+  -webkit-box-shadow: 0px 0px 13px 0px #27252521;
   box-shadow: 0px 0px 13px 0px #27252521;
   width: 300px;
   height: 308px;

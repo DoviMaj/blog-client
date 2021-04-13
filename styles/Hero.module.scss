@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .hero {
   word-wrap: break-word;
   padding: 60px 80px;
   margin-top: 77px;
+  background: -o-linear-gradient(45deg, #a1a5a238, transparent);
   background: linear-gradient(45deg, #a1a5a238, transparent);
   border-bottom: 1px solid #4646462e;
 
