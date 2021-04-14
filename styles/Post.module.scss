@@ -14,7 +14,6 @@
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px;
   padding: 50px 80px;
 
   @media (max-width: 400px) {
@@ -26,9 +25,15 @@
 }
 
 .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  margin: 20px;
   padding: 35px;
-  -webkit-box-shadow: 0px 0px 13px 0px #27252521;
   box-shadow: 0px 0px 13px 0px #27252521;
+  -webkit-box-shadow: 0px 0px 13px 0px #27252521;
   width: 300px;
   height: 308px;
   overflow: hidden;

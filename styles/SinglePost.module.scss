@@ -12,7 +12,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -23,7 +22,7 @@
   padding: 4em 18em;
   word-wrap: break-word;
 
-  @media (max-width: 400px) {
-    padding: 50px 40px;
+  @media (max-width: 1000px) {
+    padding: 10%;
   }
 }
